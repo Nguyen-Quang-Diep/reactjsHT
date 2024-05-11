@@ -21,7 +21,7 @@ class AddUserInfo extends React.Component{
                 id: Math.floor(Math.random() * 100) + 1 + '-random',
                 name: this.state.name,
                 age: this.state.age,
-                profesion: "Information Technology"
+                profesion: 'Information Technology'
             })
        }
        handleOnchangeAge (event) {

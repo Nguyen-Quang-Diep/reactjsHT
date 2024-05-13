@@ -24,14 +24,20 @@ class DisplayInfo extends React.Component{
                 </div>
                 {this.state.isTheShowListUser && 
                 <div>
-                    {listUsers.map((user, index) =>{
-                        console.log(user);
+                    {listUsers.map((user) =>{
+                        // console.log(user);
                         return (
                             <div key={user.id} className={user.age > 18 ? 'red' : 'green'}>
-                                        <div>My name is {user.name}</div>
-                                        <div>I'm {user.age} year's old</div>
-                                        </div>
-                                        )
+                                <div>
+                                    <div>My name is {user.name}</div>
+                                    <div>I'm {user.age} year's old</div>
+                                </div>
+                                <div>
+                                    <button onClick={() =>this.props.handleDeleteUser(user.id)}>Delete</button>
+                                </div>
+                            </div>
+                                    
+                                )
                         // convert nhanh tu kieu string sang kieu number them dau +
                     //     if(+user.age > 18){
                     //         return ( 

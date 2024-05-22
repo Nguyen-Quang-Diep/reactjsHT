@@ -4,7 +4,6 @@ import DisplayInfo from './DisplayInfo'
 
 class MyComponents extends React.Component {
     // dry 
-
     state = {
         listUsers: [
             {id: 1, name: 'Hoi Dan IT', age: "30"},
@@ -12,6 +11,8 @@ class MyComponents extends React.Component {
             {id: 3, name: 'PhamManhQuynh', age: "29"}  
         ]
     }
+
+    
     // Func Add a new User
     handleAddNewUser = (userObj) => {
         // spread syntax insert 
